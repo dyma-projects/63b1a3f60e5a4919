@@ -1,0 +1,16 @@
+<div class="square">
+  <h1>{{ title }}</h1>
+
+  <div>
+    <img width="100px" height="100px" [src]="lienImage" alt="image" />
+  </div>
+
+  <div>
+  <button (click)="sauvegarder()">Sauvegarder</button>
+  </div>
+
+  <div>
+    <input type="text" [value]="nom" (input)="nom = $any($event.target).value" />
+    <p>{{ nom }}</p>
+  </div>
+</div>
